@@ -1,0 +1,14 @@
+{
+  "name": "finance",
+  "version": "1.0.0",
+  "description": "cron job financial data collection",
+  "author": "Charles Zawacki <cazwacki@gmail.com> (https://charles.zawackis.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cazwacki/finance"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "5.2.2"
+  }
+}

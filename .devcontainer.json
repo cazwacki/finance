@@ -1,18 +1,24 @@
 {
-	"name": "Go",
-	"image": "mcr.microsoft.com/devcontainers/go:0-1.19-bullseye",
-	"customizations": {
-		"vscode": {
-			"settings": {},
-			"extensions": [
-				"golang.Go",
-				"colton1989.golang-group-imports"
-			]
-		}
-	},
-	"runArgs": [
-		"--rm"
-	],
-	"shutdownAction": "stopContainer",
-	"remoteUser": "root"
+  "name": "NodeJS 20",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "extensions": [
+        "yoavbls.pretty-ts-errors",
+        "kevinmcgowan.TypeScriptImport",
+        "miclo.sort-typescript-imports",
+        "mikestead.dotenv",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install -g yarn; yarn",
+  "runArgs": ["--rm"],
+  "shutdownAction": "stopContainer",
+  "remoteUser": "root"
 }
